@@ -166,6 +166,7 @@ class StripTagBody {
   final List<List<int>> _removeList = [];
   int? _posStart;
 
+  /// Creates a strip-tag-body handler for the given [tags] list and fallback [next] callback.
   StripTagBody(Object tags,
       String? Function(String tag, String html, dynamic info) next)
       : _isRemoveAll = tags is! List,

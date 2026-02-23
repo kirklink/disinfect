@@ -9,11 +9,19 @@
 
 /// Information about a CSS attribute encountered during filtering.
 class CssAttrInfo {
+  /// Zero-based index of this property among all properties parsed so far.
   final int position;
+
+  /// Character offset of this property in the original CSS string.
   final int sourcePosition;
+
+  /// The raw `name:value` source text of this property.
   final String source;
+
+  /// Whether this property is in the whitelist.
   final bool isWhite;
 
+  /// Creates a CSS attribute info record.
   const CssAttrInfo({
     required this.position,
     required this.sourcePosition,
@@ -487,6 +495,7 @@ class CssFilter {
   final CssOnAttrHandler _onIgnoreAttr;
   final CssSafeAttrValueHandler _safeAttrValue;
 
+  /// Creates a CSS filter with optional custom whitelist and callbacks.
   CssFilter({
     Map<String, Object>? whiteList,
     CssOnAttrHandler? onAttr,

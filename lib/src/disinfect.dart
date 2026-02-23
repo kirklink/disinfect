@@ -13,11 +13,19 @@ import 'whitelist.dart' as wl;
 
 /// Information passed to tag callback handlers.
 class TagInfo {
+  /// Character offset of this tag in the original HTML string.
   final int sourcePosition;
+
+  /// Zero-based index of this tag among all tags parsed so far.
   final int position;
+
+  /// Whether this is a closing tag (`</tag>`).
   final bool isClosing;
+
+  /// Whether this tag is in the whitelist.
   final bool isWhite;
 
+  /// Creates a tag info record.
   const TagInfo({
     required this.sourcePosition,
     required this.position,
