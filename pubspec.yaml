@@ -1,0 +1,12 @@
+name: disinfect
+description: >-
+  Dart port of js-xss — sanitize untrusted HTML to prevent XSS attacks using a
+  whitelist-based configuration. Includes CSS property filtering (inlined from
+  cssfilter). Zero runtime dependencies.
+version: 1.0.0
+
+environment:
+  sdk: ^3.0.0
+
+dev_dependencies:
+  test: ^1.24.0
