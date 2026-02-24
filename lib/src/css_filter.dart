@@ -2,6 +2,7 @@
 ///
 /// Provides CSS property whitelisting and sanitization for use in XSS
 /// filtering. Ported from https://github.com/nicedoc/cssfilter.
+library;
 
 // ---------------------------------------------------------------------------
 // Types

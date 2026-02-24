@@ -1,6 +1,7 @@
 /// HTML sanitizer.
 ///
 /// Ported from js-xss/lib/xss.js and js-xss/lib/index.js.
+library;
 
 import 'css_filter.dart';
 import 'defaults.dart' as defaults;

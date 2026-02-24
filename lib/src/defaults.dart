@@ -1,6 +1,7 @@
 /// Default settings for XSS filtering.
 ///
 /// Ported from js-xss/lib/default.js.
+library;
 
 import 'css_filter.dart';
 

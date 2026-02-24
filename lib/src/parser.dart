@@ -1,6 +1,7 @@
 /// Simple HTML parser.
 ///
 /// Ported from js-xss/lib/parser.js.
+library;
 
 /// Find the index of the first whitespace character in [str].
 /// Returns -1 if no whitespace is found.
